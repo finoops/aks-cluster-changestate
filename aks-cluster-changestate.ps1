@@ -1,3 +1,5 @@
+Import-module Az.Aks
+
 param(
   [Parameter(Mandatory=$true)]
   [String] $ResourceGroupName,
