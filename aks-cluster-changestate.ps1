@@ -5,8 +5,8 @@ param(
   [Parameter(Mandatory=$true)]
   [String] $AksClusterName,
 
-	[Parameter(Mandatory=$true)]
-	[ValidateSet('start','stop')]
+  [Parameter(Mandatory=$true)]
+  [ValidateSet('start','stop')]
   [String] $Operation
 )
 
@@ -27,7 +27,7 @@ switch -Exact ($Operation)
 {
     'start'
     {
-		  Write-Output "Starting Cluster $AksClusterName in $ResourceGroupName"
+      Write-Output "Starting Cluster $AksClusterName in $ResourceGroupName"
       Start-AzAksCluster -ResourceGroupName $ResourceGroupName -Name $AksClusterName
     }
     'stop'
