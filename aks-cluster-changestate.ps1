@@ -14,8 +14,8 @@ try
 {
   Disable-AzContextAutosave -Scope Process
     
-	#System Managed Identity
-	$AzureContext = (Connect-AzAccount -Identity).context
+  #System Managed Identity
+  $AzureContext = (Connect-AzAccount -Identity).context
   $AzureContext = Set-AzContext -SubscriptionName $AzureContext.Subscription -DefaultProfile $AzureContext
 }
 catch {
