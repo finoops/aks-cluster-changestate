@@ -1,17 +1,17 @@
-workflow aks-cluster-changestate {
+Param
+(
+	[Parameter(Mandatory=$true)]
+	[String] $ResourceGroupName,
 
-	Param
-	(
-		[Parameter(Mandatory=$true)]
-		[String] $ResourceGroupName,
-		
-		[Parameter(Mandatory=$true)]
-		[String] $AksClusterName,
-		
-		[Parameter(Mandatory=$true)]
-		[ValidateSet('start','stop')]
-		[String] $Operation
-	)
+	[Parameter(Mandatory=$true)]
+	[String] $AksClusterName,
+
+	[Parameter(Mandatory=$true)]
+	[ValidateSet('start','stop')]
+	[String] $Operation
+)
+
+workflow aks-cluster-changestate {
 	
 	try
 	{
