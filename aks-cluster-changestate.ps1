@@ -24,13 +24,13 @@
 #>
 
 Param(
-    [parameter(Mandatory=$true)]
+    	[parameter(Mandatory=$true)]
 	[String] $ResourceGroupName,
-    [parameter(Mandatory=$true)]
+    	[parameter(Mandatory=$true)]
 	[String] $AksClusterName,
-    [parameter(Mandatory=$true)]
+    	[parameter(Mandatory=$true)]
 	[ValidateSet('start','stop')]
-    [String]$Operation
+    	[String]$Operation
 )
 	
 try
