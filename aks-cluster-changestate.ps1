@@ -4,8 +4,8 @@
 
     .DESCRIPTION
         This is a PowerShell runbook, as opposed to a PowerShell Workflow runbook.
-		Note that the Automation Account will need RBAC permission on the Cluster (scoped directly or inherited) in order to
-		perform the start/stop operation.
+	Note that the Automation Account will need RBAC permission on the Cluster (scoped directly or inherited) in order to
+	perform the start/stop operation.
 
     .PARAMETER ResourceGroupName
         The name of the ResourceGroup where the AKS Cluster is located
