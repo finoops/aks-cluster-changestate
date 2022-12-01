@@ -10,7 +10,7 @@
     .PARAMETER ResourceGroupName
         The name of the ResourceGroup where the AKS Cluster is located
     
-    .PARAMETER AzureSubscriptionName
+    .PARAMETER AksClusterName
         The name of the AKS Cluster to
     
     .PARAMETER Operation
